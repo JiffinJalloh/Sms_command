@@ -1,0 +1,20 @@
+{
+  "name": "command",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JiffinJalloh/command.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JiffinJalloh/command/issues"
+  },
+  "homepage": "https://github.com/JiffinJalloh/command#readme"
+}
