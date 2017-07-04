@@ -1,8 +1,9 @@
-# An automatic sms creation script version 1.0.0
+# An automatic sms creation script in dhis2 version 1.0.0
 
 The application will be run using a webdriverio server version 4.8.0
 
-The environment variable "process.env.ACCESS_TOKEN_KEY_NAME" respresent the username credentials
-The environment variable "process.env.ACCESS_TOKEN_KEY_PASS" respresent the user password credentials
+process.env.ACCESS_TOKEN_KEY_NAME respresent the username credentials
 
-It advisable to check the package.json file for the project dependencies
+process.env.ACCESS_TOKEN_KEY_PASS respresent the user password credentials
+
+It's advisable to check the package.json file for the project dependencies
