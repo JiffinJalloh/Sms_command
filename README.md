@@ -1,4 +1,4 @@
-# An automatic sms creation script with webdriverio version 1.0.0
+# An automatic sms creation script version 1.0.0
 
 The application will be run using a webdriverio server version 4.8.0
 
