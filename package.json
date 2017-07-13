@@ -1,5 +1,5 @@
 {
-  "name": "command",
+  "name": "Sms_command",
   "version": "1.0.0",
   "description": "",
   "main": "App.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JiffinJalloh/command.git"
+    "url": "git+https://github.com/eHealthAfrica/Sms_command.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "MJ",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JiffinJalloh/command/issues"
+    "url": "https://github.com/eHealthAfrica/Sms_command/issues"
   },
-  "homepage": "https://github.com/JiffinJalloh/command#readme",
+  "homepage": "https://github.com/eHealthAfrica/Sms_command#readme",
   "dependencies": {
     "request": "^2.81.0",
     "webdriverio": "^4.8.0",
