@@ -1,15 +1,16 @@
-   'use strick'
+   'use strict'
 
 var request = require("request");
+var env = require('./env.js');
 
  var data = new Promise(function(resolve, reject){
  request({
-  uri: "https://dppi-idsr-sl.ehealthafrica.org/api/dataSets/rq0LNr72Ndo/form.json?ou=rvphgxdAUQw",
+  uri: env.baseUrl + "api/dataSets/rq0LNr72Ndo/form.json?ou=rvphgxdAUQw",
   method: "GET",
   json: true,
 	auth:{
-    user: username,
-    pass: passowrd,
+    user: env.accessTokenKeyName,
+    pass: env.accessTokenKeyPass,
     sendImmediately: true}
   },
 
@@ -20,16 +21,17 @@ var request = require("request");
  	var obj = response;
  	var groups = obj.groups;
     
-	for ( var group of groups)
+	for( let group of groups)
 	{
-		var limit = 2;
+	  var limit = 2;
 	  Object.keys(group.fields).forEach(function(field){
 	  	var dataObject = {
 	  		id: group.fields[field]. dataElement,
 	  		keyId:group.fields[field].dataElement.substring(0, limit) + group.fields[field].categoryOptionCombo.substring(0,limit),
 	  		label:group.fields[field].label
 	  	}
-	  	dataArr.push(dataObject)
+	  	dataArr.push(dataObject);
+	  	return dataArr;
 	  	keys.push(dataObject.keyId)
 	  	for(var i=0 ; i<keys.length; i++){
 	    var key = keys[i]
